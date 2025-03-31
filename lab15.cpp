@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>  // For controlling output precision
 
 using namespace std;
 
@@ -26,7 +25,8 @@ void getInfo(int &pickFrom, int &numPicks) {
 }
 
 double computeWays(int n, int k) {
-    return factorial(n) / (factorial(k) * factorial(n - k));
+    double combinations = factorial(n) / (factorial(k) * factorial(n - k));
+    return 1.0 / combinations;  // Return the probability, which is the inverse of the number of combinations
 }
 
 double factorial(int num) {
