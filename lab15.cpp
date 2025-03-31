@@ -27,6 +27,7 @@ void getInfo(int &pickFrom, int &numPicks) {
 double computeWays(int n, int k) {
     double combinations = factorial(n) / (factorial(k) * factorial(n - k));
     return 1.0 / combinations;
+}
 
 double factorial(int num) {
     if (num <= 1) {
