@@ -1,4 +1,6 @@
 #include <iostream>
+#include <iomanip>  // For controlling output precision
+
 using namespace std;
 
 void getInfo(int &pickFrom, int &numPicks);
