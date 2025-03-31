@@ -24,9 +24,13 @@ void getInfo(int &pickFrom, int &numPicks) {
 }
 
 double computeWays(int n, int k) {
-    return factorial(n) / ( factorial(k) * factorial(n - k) );
+    return factorial(n) / (factorial(k) * factorial(n - k));
 }
 
 double factorial(int num) {
-    return (num <= 1) ? 1 : num * factorial(num - 1);
+    if (num <= 1) {
+        return 1;
+    } else {
+        return num * factorial(num - 1);
+    }
 }
